@@ -1,0 +1,28 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "27.0.3"
+
+    defaultConfig {
+        applicationId "com.harlan.animation"
+        minSdkVersion 21
+        targetSdkVersion 22
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_1_5
+            targetCompatibility JavaVersion.VERSION_1_5
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+
+dependencies {
+    implementation 'com.android.support:appcompat-v7:25.3.1'
+}
